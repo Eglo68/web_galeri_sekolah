@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --color-navy: #001a3d;
+  --color-navy-soft: #0d2b57;
+  --color-gold: #775a19;
+  --color-sun: #fed488;
+  --color-mist: #eff4ff;
+  --color-paper: #f9f9ff;
+  --color-line: #d5dcec;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  :focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; }
+}
